@@ -14,25 +14,25 @@ class Portfolio extends Component {
         return (
             <div className="card-deck mt-5 pt-5">
                 <div className="card border-secondary" style={{ width: "400px" }}>
-                    <img className="card-img-top" src={java} alt="Java" />
+                    <img className="card-img-top" style={{ height: "100%" }} src={java} alt="Java" />
                     <div className="btn btn-secondary">
                         <a href="https://github.com/cooksystemsinc/java-xml-file-transfer-assessment-ManjulaTh.git" className="text-light"> Link to github </a>
                     </div>
                 </div >
                 <div className="card border-secondary" style={{ width: "400px" }}>
-                    <img className="card-img-top" src={javaScript} alt="Java Script" />
+                    <img className="card-img-top" style={{ height: "100%" }} src={javaScript} alt="Java Script" />
                     <div className="btn btn-secondary">
                         <a href="https://github.com/cooksystemsinc/js-assessment-quizler-ManjulaTh.git" class="text-light">Link to github</a>
                     </div>
                 </div >
                 <div className="card border-secondary" style={{ width: "400px" }}>
-                    <img className="card-img-top" src={spring} alt="Spring" />
+                    <img className="card-img-top " style={{ height: "100%" }} src={spring} alt="Spring" />
                     <div className="btn btn-secondary">
                         <a href="https://github.com/cooksystemsinc/spring-controllers-and-services-ManjulaTh.git" class="text-light">Link to github</a>
                     </div>
                 </div >
                 <div className="card border-secondary" style={{ width: "400px" }}>
-                    <img className="card-img-top" src={react} alt="React" />
+                    <img className="card-img-top " style={{ height: "100%" }} src={react} alt="React" />
                     <div className="btn btn-secondary">
                         <a href="https://github.com/cooksystemsinc/redux-assignment-ManjulaTh.git" class="text-light">Link to github</a>
                     </div>
