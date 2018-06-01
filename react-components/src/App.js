@@ -6,6 +6,12 @@ import AboutContainer from './container/About/About'
 import PortfolioContainer from './container/Portfolio/Portfolio'
 import Navbar from './components/Navbar/Navbar'
 
+import java from './img/Java.png'
+import javaScript from './img/JavaScript.png'
+import spring from './img/Spring.png'
+import react from './img/React.png'
+
+
 import './App.css';
 
 class App extends Component {
@@ -17,11 +23,10 @@ class App extends Component {
     ],
 
     portfolioLinks: [
-      { name: 'java', url: "https://github.com/cooksystemsinc/java-xml-file-transfer-assessment-ManjulaTh.git" },
-      { name: 'javaScript', url: "https://github.com/cooksystemsinc/js-assessment-quizler-ManjulaTh.git" },
-      { name: 'spring', url: "https://github.com/cooksystemsinc/spring-controllers-and-services-ManjulaTh.git" },
-      { name: 'react', url: "https://github.com/cooksystemsinc/spring-controllers-and-services-ManjulaTh.git" },
-    ]
+      { name: java, url: "https://github.com/cooksystemsinc/java-xml-file-transfer-assessment-ManjulaTh.git" },
+      { name: javaScript, url: "https://github.com/cooksystemsinc/js-assessment-quizler-ManjulaTh.git" },
+      { name: spring, url: "https://github.com/cooksystemsinc/spring-controllers-and-services-ManjulaTh.git" },
+      { name: react, url: "https://github.com/cooksystemsinc/spring-controllers-and-services-ManjulaTh.git" }]
 
   }
 
@@ -31,11 +36,11 @@ class App extends Component {
         <Navbar links={this.state.links} />
 
         <Switch>
-          {/* <Route
+          <Route
             path='/Portfolio'
-            render={() => <PortfolioContainer props={this.state.portfolioLinks} />}
-          /> */}
-          <Route path='/Portfolio' component={PortfolioContainer} />
+            render={() => <PortfolioContainer links={this.state.portfolioLinks} />}
+          />
+          {/* <Route path='/Portfolio' component={PortfolioContainer} /> */}
           <Route path='/about' component={AboutContainer} />
           <Route path='/' component={HomeContainer} />
         </Switch>

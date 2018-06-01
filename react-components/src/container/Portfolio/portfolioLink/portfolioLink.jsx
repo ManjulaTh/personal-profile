@@ -1,19 +1,17 @@
-import React, { Component } from 'react'
-import java from '../../../img/Java.png'
-import javaScript from '../../../img/JavaScript.png'
-import spring from '../../../img/Spring.png'
-import react from '../../../img/React.png'
+import React from 'react'
+
 
 const PortfolioLink = props => {
     return (
         <div className="card border-secondary" style={{ width: "400px" }}>
-            <img className="card-img-top" src={props.name} alt="Assessment" />
+            <img className="card-img-top" style={{ height: "100%" }} src={props.name} alt="Portfolio" />
             <div className="btn btn-secondary">
                 <a href={props.url} className="text-light"> Link to github </a>
             </div>
         </div >
-
     )
 }
+
+
 
 export default PortfolioLink
